@@ -26,7 +26,7 @@
 FROM elixir:1.15-alpine
 
 # Instala Hex, Rebar, Node.js e build tools
-RUN apk add --no-cache nodejs npm git build-base
+RUN apk add --no-cache nodejs npm git build-base inotify-tools bash
 
 WORKDIR /app
 
